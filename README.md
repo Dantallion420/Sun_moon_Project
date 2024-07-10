@@ -15,6 +15,19 @@ Repository Structure:
 /database: Holds database migrations and seeds for easy setup.
 /config: Configuration files for Laravel and environment setup.
 /resources: Views and frontend resources such as CSS and JavaScript.
+
+To make an API request using the URL and API key for ipgeolocation.io's astronomy API, you can follow these steps:
+
+API Endpoint and Parameters:
+
+Construct the base URL for the API endpoint: https://api.ipgeolocation.io/astronomy.
+Append query parameters to this base URL for specific data:
+apiKey: Your unique API key obtained from ipgeolocation.io.
+date: The date for which you want astronomy data (e.g., current date).
+lat: Latitude coordinate for the location (e.g., user-defined or default).
+long: Longitude coordinate for the location (e.g., user-defined or default).
+
+
 Deployment Instructions:
 
 Clone the repository locally.
@@ -22,5 +35,7 @@ Install MAMP and set up the project in the htdocs or equivalent directory.
 Configure the .env file with database credentials and other environment variables.
 Run database migrations to set up the database schema.
 Start MAMP servers and navigate to the project URL to test locally.
+
+
 Contributing:
 Contributions, bug reports, and feature requests are welcome. Fork the repository, make your changes, and submit a pull request.
