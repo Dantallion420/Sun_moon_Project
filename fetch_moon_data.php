@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Replace with your ipgeolocation.io API key
-$apiKey = '925c4ca95b824cf1b5875605223c784f';
+$apiKey = '';
 
 // Default latitude and longitude (New York)
 $latitude = isset($_GET['lat']) ? $_GET['lat'] : '40.7128';
