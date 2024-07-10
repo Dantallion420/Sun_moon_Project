@@ -24,7 +24,7 @@ if ($stmtSituations) {
     $situations = []; // Empty array if no situations found
 }
 
-$apiKey = "925c4ca95b824cf1b5875605223c784f";
+$apiKey = "";
 ?>
 
 <!DOCTYPE html>
