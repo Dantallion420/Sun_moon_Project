@@ -1,0 +1,185 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto; /* Hide horizontal overflow */
+}
+.info-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color for better readability */
+}
+
+.navbar {
+    background-color: #343a40; /* Dark navbar background */
+}
+
+.navbar-brand {
+    color: #fff !important; /* White navbar brand text */
+}
+
+.nav-link {
+    color: #fff !important; /* White navbar links */
+}
+
+.card-title {
+    color: #333; /* Dark card title text */
+}
+
+.card-text {
+    color: #555; /* Slightly darker text for card content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.info-button {
+    padding: 10px 20px;
+    background: #f39c12;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a.info-button:hover {
+    background: #e67e22;
+}
+
+main {
+    margin-top: 20px;
+    padding-bottom: 100px; /* Ensure space for footer or content to scroll */
+}
+
+section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #fff; /* Adjust text color for readability */
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
+/* Animation */
+@keyframes sun-moon {
+    0% {
+        transform: translateX(-100%) translateY(0%);
+    }
+    50% {
+        transform: translateX(50%) translateY(-100%);
+    }
+    100% {
+        transform: translateX(200%) translateY(0%);
+    }
+}
+
+.sun-moon-container {
+    position: relative; /* Changed to relative for better responsiveness */
+    width: 100%;
+    height: auto; /* Allow container to adjust height based on content */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.sun, .moon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sun {
+    background-image: url('images/image1.png'); /* Replace with your sun image path */
+    animation: sun-moon 10s linear infinite;
+}
+
+.moon {
+    background-image: url('images/image2.png'); /* Replace with your moon image path */
+    animation: sun-moon 10s linear infinite 5s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .sun, .moon {
+        width: 60px;
+        height: 60px;
+    }
+}
